@@ -1,4 +1,4 @@
-# Predicting Respiratory Disease Percentages: A Regression Modeling Project
+# <FONT COLOR='GREEN'> Predicting Respiratory Disease Percentages: A Regression Modeling Project
 ## Project Overview
 
 This project aims to predict the percentage of cases related to various respiratory diseases (such as ILI, RSV, COVID-19, etc.) based on various features such as demographic and temporal information. Multiple regression models are implemented and evaluated for their performance, including Linear Regression, Decision Tree Regressor, Random Forest Regressor, Gradient Boosting Regressor, and Support Vector Regressor (SVR). The goal is to determine the best-performing model based on Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared (R²) scores.
@@ -83,29 +83,29 @@ To run the project, follow the steps below:
    
 Ensure you have Python 3.7+ installed, and then install the required libraries using pip:
 
-            <I> pip install pandas numpy scikit-learn matplotlib seaborn </I>
+             pip install pandas numpy scikit-learn matplotlib seaborn 
 
 2. Load and Preprocess Data
 
 Make sure to load the dataset into your Python environment using pandas:
 
 
-              <I> import pandas as pd</I>
-              <I>df = pd.read_csv('path_to_dataset.csv')</I>
+               import pandas as pd
+               df = pd.read_csv('path_to_dataset.csv')
 
 Preprocess the data as described in the project, including handling missing values and feature scaling.
 
 3. Train and Evaluate Models
 Run the regression models section of the code, where the models will be trained and evaluated using the training and testing datasets.
 
-              <I>from sklearn.linear_model import LinearRegression</I>
-              <I>from sklearn.ensemble import RandomForestRegressor</I>
+              from sklearn.linear_model import LinearRegression
+              from sklearn.ensemble import RandomForestRegressor
 
 4. Visualizations
 For visualizations, simply run the code for each plot type. Ensure to have matplotlib and seaborn installed for the plots to work correctly.
 
-              <I>import matplotlib.pyplot as plt</I>
-              <I>import seaborn as sns</I>
+              import matplotlib.pyplot as plt
+              import seaborn as sns
 
 ## Contributing
 If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request with a detailed explanation of the improvements. Contributions related to data cleaning, feature engineering, model improvements, or additional visualizations are welcome.
