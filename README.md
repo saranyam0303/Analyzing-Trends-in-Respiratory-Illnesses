@@ -71,49 +71,43 @@ These features significantly contribute to predicting the percentage of cases an
 ## Visualization
 Several visualizations were created to explore the data and model performance
 
-Histogram  for the 'percent' feature.
-KDE plot for the smooth distribution of 'percent'.
-Correlation Heatmap to visualize the relationship between numerical features.
-Scatter plots to investigate relationships between selected variables.
-Feature Importance Plot for Random Forest to show which features influence the prediction most.
+* Histogram  for the 'percent' feature.
+* Correlation Heatmap to visualize the relationship between numerical features.
+* Scatter plots to investigate relationships between selected variables.
+* Feature Importance Plot for Random Forest to show which features influence the prediction most.
 
 ## How to Run the Code
 To run the project, follow the steps below:
 
 1. Install Dependencies
+   
 Ensure you have Python 3.7+ installed, and then install the required libraries using pip:
 
-bash
-Copy code
-pip install pandas numpy scikit-learn matplotlib seaborn
+** pip install pandas numpy scikit-learn matplotlib seaborn **
+
 2. Load and Preprocess Data
+
 Make sure to load the dataset into your Python environment using pandas:
 
-python
-Copy code
-import pandas as pd
-df = pd.read_csv('path_to_dataset.csv')
+
+** import pandas as pd
+df = pd.read_csv('path_to_dataset.csv') **
+
 Preprocess the data as described in the project, including handling missing values and feature scaling.
 
 3. Train and Evaluate Models
 Run the regression models section of the code, where the models will be trained and evaluated using the training and testing datasets.
 
-python
-Copy code
-from sklearn.linear_model import LinearRegression
-from sklearn.ensemble import RandomForestRegressor
+<I>from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor</I>
 
-# Example for training a Random Forest model
-model = RandomForestRegressor(n_estimators=100, random_state=42)
-model.fit(X_train_scaled, y_train)
 4. Visualizations
 For visualizations, simply run the code for each plot type. Ensure to have matplotlib and seaborn installed for the plots to work correctly.
 
-python
-Copy code
+<I>
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.histplot(df['percent'], kde=True)
+</I>
 
 ## Contributing
 If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request with a detailed explanation of the improvements. Contributions related to data cleaning, feature engineering, model improvements, or additional visualizations are welcome.
